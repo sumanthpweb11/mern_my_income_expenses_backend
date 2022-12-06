@@ -1,0 +1,42 @@
+{
+  "name": "mern_my_income_expenses_backend",
+  "version": "1.0.0",
+  "description": "",
+  "type":"module",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../mern_my_income_expenses_frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumanthpweb11/mern_my_income_expenses_backend.git"
+  },
+  "keywords": [
+    "mern",
+    "expense",
+    "icome",
+    "backend",
+    "node",
+    "express"
+  ],
+  "author": "sumanth prabhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumanthpweb11/mern_my_income_expenses_backend/issues"
+  },
+  "homepage": "https://github.com/sumanthpweb11/mern_my_income_expenses_backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0"
+  }
+}
