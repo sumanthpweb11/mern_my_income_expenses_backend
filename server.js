@@ -30,8 +30,10 @@ app.use(
 
 // Route Imports
 import userRoute from "./routes/userRoutes.js";
+import transactionRoute from "./routes/transactionRoutes.js";
 
 app.use("/api/users", userRoute);
+app.use("/api/transactions", transactionRoute);
 
 // app.get("/", (req, res) => {
 //   res.send("hello");

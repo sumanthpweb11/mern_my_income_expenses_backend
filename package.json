@@ -2,7 +2,7 @@
   "name": "mern_my_income_expenses_backend",
   "version": "1.0.0",
   "description": "",
-  "type":"module",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -37,6 +37,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.8.0"
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.0",
+    "react-moment": "^1.1.2"
   }
 }
