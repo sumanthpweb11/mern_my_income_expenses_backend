@@ -44,10 +44,10 @@ export const getAllTransactions = catchAsyncError(async (req, res, next) => {
 
   res.send(transactions);
 
-  res.status(200).json({
-    success: true,
-    transactions,
-  });
+  // res.status(200).json({
+  //   success: true,
+  //   transactions,
+  // });
 });
 
 // Edit Transaction

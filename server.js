@@ -35,9 +35,11 @@ import transactionRoute from "./routes/transactionRoutes.js";
 app.use("/api/users", userRoute);
 app.use("/api/transactions", transactionRoute);
 
-// app.get("/", (req, res) => {
-//   res.send("hello");
-// });
+app.get("/", (req, res) =>
+  res.send(
+    `<h1>Server is working click <a href=${process.env.FRONTEND_URL}>here</a></h1>`
+  )
+);
 
 app.use(ErrorMiddleware);
 
