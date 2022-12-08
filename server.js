@@ -22,7 +22,7 @@ app.use(
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin: ["http://localhost:3000", "https://mern-myexpense.onrender.com"],
     // credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
